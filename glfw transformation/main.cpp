@@ -102,10 +102,10 @@ int main()
 	// set up vertex data (and buffer(s)) and configure vertex attributes
 	// ------------------------------------------------------------------
 	float vertices[] = {
-		 0.2f,  0.2f, 0.0f,  // top right
-		 0.2f, -0.2f, 0.0f,  // bottom right
-		-0.2f, -0.2f, 0.0f,  // bottom left
-		-0.2f,  0.2f, 0.0f   // top left 
+		 0.1f,  0.1f, 0.0f,  // top right
+		 0.4f, -0.4f, 0.0f,  // bottom right
+		-0.4f, -0.4f, 0.0f,  // bottom left
+		-0.1f,  0.1f, 0.0f   // top left 
 	};
 	unsigned int indices[] = {  // note that we start from 0!
 		0, 1, 3,  // first Triangle
@@ -151,7 +151,7 @@ int main()
 
 		// render
 		// ------
-		glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
+		glClearColor(0.9f, 0.9f, 0.9f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT);
 
 		// draw our first triangle
